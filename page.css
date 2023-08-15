@@ -1,0 +1,18 @@
+.heading {
+  text-align: center;
+  border-bottom: 2px solid;
+}
+
+.parent {
+  display: flex;
+  padding: 20px;
+  border-bottom: 2px solid;
+}
+
+.child {
+  padding: 10px;
+  flex: 1;
+  border: 1px solid;
+  margin-right: 70px;
+  text-align: center;
+}

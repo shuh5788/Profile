@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Survey</title>
+  </head>
+  <body style="background-color: powderblue">
+    <h1 style="background-color: hsla(9, 100%, 40%, 0.5)">Survey Form</h1>
+    <form>
+      <label style="background-color: blue">Customer FirstName</label>
+      <input type="text" />
+      <label style="background-color: red">Customer LastName</label>
+      <input type="text" />
+      <label style="background-color: yellow">Address</label>
+      <input type="text" />
+      <label style="background-color: green">City</label>
+      <input type="text" />
+      <label style="background-color: lightgoldenrodyellow">Phone</label>
+      <input
+        type="tel"
+        id="phone1"
+        name="phonenum"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        maxlength="10"
+        placeholder="123-456-7890"
+      />
+      <label style="background-color: green">Birth-date</label>
+      <input type="date" />
+      <label>Status in Canada</label>
+      <input list="status" name="status" />
+      <datalist id="status">
+        <option value="Student"></option>
+        <option value="Worker"></option>
+        <option value="PR"></option>
+      </datalist>
+      <label style="background-color: green">Gender</label>
+      <input type="checkbox" id="male1" name="male" value="MALE" />
+      <label>Male</label>
+      <input type="checkbox" id="male2" name="female" value="FEMALE" />
+      <label>Female</label>
+      <label>Skills</label>
+      <input type="radio" id="eat" value="eat" name="radiooption" />
+      <label>Eat</label>
+      <input type="radio" id="sleep" value="sleep" name="radiooption" />
+      <label>Sleep</label>
+      <img
+        src="https://www.rd.com/wp-content/uploads/2020/11/RD-mickey-mouse-GettyImages-1137134597-JVcrop.jpg?resize=1536,1024"
+        alt="mouse"
+        with="300"
+        height="300"
+      /><br />
+      <label>Upload Resume</label>
+      <input type="file" />
+      <label>Ratings</label>
+      <input type="radio" id="one" name="ratings" value="ONE" />
+      <label>1</label>
+      <input type="radio" id="two" name="ratings" value="TWO" />
+      <label>2</label>
+      <input type="radio" id="three" name="ratings" value="THREE" />
+      <label>3</label>
+      <input type="radio" id="four" name="ratings" value="FOUR" />
+      <label>4</label>
+      <input type="radio" id="five" name="ratings" value="FIVE" />
+      <label>5</label>
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>

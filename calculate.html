@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script>
+      function Calculate() {
+        const numOne = Number(document.getElementById("num1").value);
+        const priceOne = Number(document.getElementById("price1").value);
+        const numTwo = Number(document.getElementById("num2").value);
+        const priceTwo = Number(document.getElementById("price2").value);
+        const total = numOne * priceOne + numTwo * priceTwo;
+
+        console.log(total);
+        document.getElementById("res").value = total;
+      }
+    </script>
+  </head>
+  <body>
+    <form action="submit">
+      <input type="number" id="num1" name="Number One" />
+      <input type="number" id="price1" name="Price One" />
+      <input type="number" id="num2" name="Number Two" />
+      <input type="number" id="price2" name="Price Two" />
+      <p>
+        <input type="text" name="total" id="res" />
+        <input type="button" value="submit" id="btn" onclick="Calculate()" />
+      </p>
+    </form>
+  </body>
+</html>

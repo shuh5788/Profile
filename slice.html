@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <script>
+      function myfunction() {
+        var fname = document.getElementById("fname").value;
+        //slice
+        var slicestr = fname.slice(1, 3);
+        //document.write("Sliced String ", slicestr);
+
+        //substring
+        var substr1 = fname.substring(-1, -3);
+        document.write("Sliced String", substr1);
+
+        //replace
+        var names = "Hi from Vancouver, Good Evening Vancouver";
+        var result = names.replaceAll("Vancouver", "Calgary");
+
+        document.write(result);
+        document.write(fname.toUpperCase());
+        document.write(fname.toLowerCase());
+
+        let res = fname.split("").reverse().join();
+
+        for (let i = fname.length - 1; i >= 0; i--) {
+          document.write(fname[i]);
+        }
+        console.log(fname[fname.length - 1]);
+        console.log(fname[0]);
+
+        if (fname[fname.length - 1] == fname[0]) {
+          document.write("it is the same");
+        }
+
+        let strs = fname.split(" ");
+        document.write(strs[0] + " " + strs[1][0] + ".");
+      }
+    </script>
+  </head>
+  <body>
+    <form action="submit">
+      <input type="text" id="fname" name="first name" />
+      <input type="button" id="btn1" value="Submit" onclick="myfunction()" />
+    </form>
+  </body>
+</html>

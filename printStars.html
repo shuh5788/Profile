@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Document URL using JS</title>
+    <script>
+      function printStars() {
+        let num = Number(document.getElementById("txt1").value);
+
+        for (let j = 1; j <= num; j++) {
+          for (let i = 1; i <= j; i++) {
+            document.write("*");
+          }
+          document.write("<br>");
+        }
+        for (let j = 1; j < num; j++) {
+          for (let i = num - j; i > 0; i--) {
+            document.write("*");
+          }
+          document.write("<br>");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <input type="text" id="txt1" name="txturl" />
+      <input type="button" id="btn1" value="Submit" onclick="printStars()" />
+    </form>
+  </body>
+</html>

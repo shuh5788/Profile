@@ -1,0 +1,6 @@
+.bottom-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  z-index: -1;
+}

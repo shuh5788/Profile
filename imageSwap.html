@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <script>
+      let cnt = 0;
+      function swapImage() {
+        cnt++;
+        if (cnt % 2 == 0) {
+          document.getElementById("original").src =
+            "https://static.wikia.nocookie.net/insideout/images/0/06/Io_Sadness_tablet2.jpg/revision/latest?cb=20160306082300";
+        } else {
+          document.getElementById("original").src =
+            "https://static.wikia.nocookie.net/insideout/images/b/b4/Io_Joy_tablet2.jpg/revision/latest?cb=20160306082308";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <img
+        src="https://static.wikia.nocookie.net/insideout/images/b/b4/Io_Joy_tablet2.jpg/revision/latest?cb=20160306082308"
+        alt="image one"
+        id="original"
+        width="300px"
+        height="300px"
+      />
+      <input type="button" name="button" value="swap" onclick="swapImage()" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <script>
+      function myfunction() {
+        var fname = Number(document.getElementById("txt1").value);
+
+        //using str
+        // for (let i = fname.length - 1; i >= 0; i--) {
+        //   newStr += fname[i];
+        // }
+
+        // if (fname === newStr) {
+        //   document.write("It is a palindrome");
+        // } else {
+        //   document.write("It is not a palindrome");
+        // }
+
+        //using number
+        let reversed,
+          remainder,
+          original = 0;
+
+        original = fname;
+
+        while (fname > 0) {
+          remainder = fname % 10;
+          fname = parseInt(fname / 10);
+          reversed = reversed * 10 + remainder;
+        }
+
+        // palindrome if original and reversed are equal
+        if (original == reversed) document.write("It is a palindrome.");
+        else document.write("It is not a palindrome.");
+      }
+    </script>
+  </head>
+  <body>
+    <label>Enter Number:</label>
+    <input type="text" id="txt1" name="num" /><br />
+    <input type="button" id="btn1" value="Submit" onclick="myfunction()" />
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <script>
+      function changeText() {
+        document.getElementById("p1").innerHTML = Date();
+      }
+    </script>
+  </head>
+  <body>
+    <p id="p1">Hi, from Vancouver</p>
+    <form action="submit">
+      <input type="button" id="btn" value="Click Me" onclick="changeText()" />
+    </form>
+  </body>
+</html>

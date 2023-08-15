@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: blue;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.main-paragraph {
+  justify-content: center;
+  font-style: italic;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .light {
+    flex-direction: column;
+    background-color: green;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script>
+      function Calculate() {
+        const numberOne = Number(document.getElementById("num1").value);
+        const priceOne = Number(document.getElementById("price1").value);
+        const numberTwo = Number(document.getElementById("num2").value);
+        const priceTwo = Number(document.getElementById("price2").value);
+        const totalPrice = numberOne * priceOne + numberTwo * priceTwo;
+
+        // document.getElementById("p1").innerHTML = "$" + totalPrice;
+        // document.getElementById("total").innerHTML = total;
+        document.getElementById("total").value = totalPrice;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Payment</h1>
+    <form action="submit">
+      <label for="item1">Item 1</label>
+      <input type="number" id="num1" name="Number One" />
+      <input type="number" id="price1" name="Price One" /><br />
+      <label for="item2">Item 2</label>
+      <input type="number" id="num2" name="Number Two" />
+      <input type="number" id="price2" name="Price One" />
+      <!-- <input type="button" id="btn" value="enter" onclick="Calculate()" /> -->
+      <p id="p1">
+        <input type="text" name="total" id="total" />
+        <input type="button" value="submit" onclick="Calculate()" id="result" />
+      </p>
+    </form>
+  </body>
+</html>
