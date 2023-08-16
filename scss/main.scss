@@ -1,14 +1,16 @@
 @import "mixin";
 @import "reset";
+$color-background: #505050;
+$title-text: #ffffff;
 
 body {
-  background-image: url("/Users/subin/Desktop/web/Profile/image/monet.jpeg");
+  background-image: url("/image/monet.jpeg");
 }
 
 footer {
   position: relative;
   width: 100%;
-  background-color: #505050;
+  background-color: $color-background;
 }
 
 #footer-container {
@@ -52,7 +54,7 @@ footer {
   position: relative;
   margin-left: 50px;
   font-family: miso-bold;
-  color: #ffffff;
+  color: $title-text;
   font-size: 50px;
   margin-bottom: 20px;
 }
