@@ -1,0 +1,86 @@
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+    transition: all 0.8s;
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.8s;
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.8s;
+  }
+}
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #505050;
+}
+
+#footer-container {
+  position: relative;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #505050;
+}
+
+.portfolio {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+#portfolio-1 {
+  background-repeat: repeat-x;
+  bacground-position: center bottom;
+  bacground-color: #00bff3;
+}
+
+.portfolio-container {
+  position: relative;
+  width: 1200px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#portfolio-container-1 {
+  background-image: url("/Users/subin/Desktop/web/Profile/image/monet.jpeg");
+}
+
+.portfolio-text-container {
+  position: absolute;
+  width: 360px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.portfolio-text-title {
+  position: relative;
+  margin-left: 50px;
+  font-family: miso-bold;
+  color: #ffffff;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
