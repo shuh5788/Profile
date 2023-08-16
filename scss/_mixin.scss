@@ -1,4 +1,5 @@
 // @use "sass:math";
+
 //color
 $border: #2d2d2d;
 $white: #efefef;
@@ -224,7 +225,7 @@ $min-mobile: 375px;
 @keyframes fadeInUp {
     0% {
         opacity: 0;
-        transform: translate3d(0, 100%, 0);
+        transform: translateY(0, 100%, 0);
     }
     to {
         opacity: 1;
