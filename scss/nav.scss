@@ -4,8 +4,8 @@
 header {
   position: relative;
   width: 100%;
-  background-color: rgba(0,0,0,.3);
-  box-shadow: 2px 5px 5px rgba(0,0,0,.12);
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.12);
 
   .nav {
     max-width: $pc;
@@ -14,19 +14,19 @@ header {
     @include flex(space-between);
     align-items: center;
 
-    .logo h1{
+    .logo h1 {
       font-size: 0;
       color: transparent;
       width: 130px;
       height: 86px;
-      background-image: url(/image/me.jpeg);
-      background-size: cover
+      background-image: url("/Users/subin/Desktop/web/Profile/image/me.jpeg");
+      background-size: cover;
     }
 
     .menu ul {
       @include flex(flex-end);
       gap: 20px;
-      li a{
+      li a {
         color: $white;
       }
     }

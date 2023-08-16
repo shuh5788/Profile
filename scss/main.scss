@@ -1,4 +1,5 @@
 @import "mixin";
+@import "reset";
 
 body {
   background-image: url("/Users/subin/Desktop/web/Profile/image/monet.jpeg");
@@ -6,16 +7,18 @@ body {
 
 footer {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   background-color: #505050;
 }
 
 #footer-container {
+  width: $pc;
+  margin: 0 auto;
+  padding: 35px;
   display: flex;
+  gap: 20px;
   align-items: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }

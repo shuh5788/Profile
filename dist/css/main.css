@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -31,22 +32,104 @@
     transition: all 0.8s;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+html,
+body {
+  font-family: "AppleSDGothicNeoR", "AppleSDGothicNeoR", "맑은 고딕", "Malgun Gothic", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.03rem;
+}
+@media screen and (min-width: 720px) and (max-width: 1280px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a,
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+span,
+strong,
+em,
+i {
+  font-style: normal;
+  line-height: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
 body {
   background-image: url("/Users/subin/Desktop/web/Profile/image/monet.jpeg");
 }
 
 footer {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   background-color: #505050;
 }
 
 #footer-container {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 35px;
   display: flex;
+  gap: 20px;
   align-items: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
