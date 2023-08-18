@@ -1,0 +1,25 @@
+.main {
+  background-color: white;
+  color: black;
+}
+@media (max-width: 800px) {
+  .main {
+    background-color: green;
+  }
+}
+.main_bgcolor {
+  background-color: grey;
+}
+.main_bgcolor_child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_bgcolor_child_paragraph {
+  font-size: 30px;
+  font-style: italic;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 600;
+}
